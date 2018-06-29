@@ -9,8 +9,10 @@ spring:
     url: jdbc:mysql://localhost:3306/catalog?useSSL=false
     username: root
     password: admin
+    #to always initialize the DataSource
     initialization-mode: always
   jpa:
     hibernate:
+      #update the schema if necessary
       ddl-auto: update
     show-sql: true
